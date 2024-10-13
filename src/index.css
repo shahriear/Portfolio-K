@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.manu {
+  height: 80px;
+  z-index: 1;
+}
+.manu ul li a {
+  color: black;
+  font-size: medium;
+  text-decoration: none;
+  line-height: 50px;
+  display: block;
+  transition: 0.3s;
+  padding: 0 29px;
+  width: 100%;
+}
+.manu ul li {
+  float: left;
+  list-style: none;
+  position: relative;
+}
+/* .manu ul li a:hover {
+  color: gold;
+  background-color: slategrey;
+} */
+.manu ul {
+  background-color: aliceblue;
+}
+.manu ul li ul a {
+  color: aliceblue;
+}
+.manu ul li ul {
+  position: absolute;
+  width: 155px;
+  left: 0%;
+  top: 90%;
+  background-color: black;
+  visibility: hidden;
+  transition: 0.2s;
+  opacity: 0;
+}
+.manu ul li:hover > ul {
+  visibility: visible;
+  opacity: 1;
+}
+.manu ul li ul li {
+  width: 100%;
+}
+.manu ul li ul li a:hover {
+  color: black;
+  background-color: whitesmoke;
+}
+.manu ul li ul li ul {
+  top: 0%;
+  left: 101%;
+  width: 150px;
+}
+
+/* ====================== */
+/* ============= Home> Basic============= */
+.project_items {
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+.project_items .project_details {
+  background-color: black;
+  padding: 8px 30px;
+  position: absolute;
+  left: 50%;
+  bottom: 8px;
+  transform: translate(50%, 115%);
+  width: calc(100% - 16px);
+  text-align: center;
+  transition: 0.3s;
+}
+.project_items:hover .project_details {
+  transform: translate(-50%, 0);
+}
+.project_details H4 {
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+}
+.project_details P {
+  font-size: 18px;
+  font-weight: 500;
+  color: silver;
+}
+
+/* ====================== */
+/* ============= Portfolio Layout> grid ============= */
+
+/* From Uiverse.io by eslam-hany */
+.book {
+  /* position: relative;
+  border-radius: 10px; */
+  /* display: flex; */
+  /* width: fit-content; */
+  /* display: inline-block; */
+  /* width: 460px; */
+
+  /* background-color: black; */
+  -webkit-box-shadow: 1px 1px 12px #000;
+  box-shadow: 1px 1px 12px #000;
+  /* -webkit-transform: preserve-3d;
+  -ms-transform: preserve-3d;
+  transform: preserve-3d; */
+  /* -webkit-perspective: 2000px;
+  perspective: 2000px; */
+  /* display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; */
+  /* -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #000; */
+}
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+.cover {
+  /* top: 0; */
+  /* position: absolute; */
+  /* background-color: black; */
+  width: 100%;
+  height: 100%;
+  /* border-radius: 10px; */
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform-origin: 0;
+  -ms-transform-origin: 0;
+  transform-origin: 0;
+  /* -webkit-box-shadow: 1px 1px 10px #000;
+  box-shadow: 1px 1px 10px #000; */
+  /* display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; */
+}
+.cover img {
+  width: 720px;
+}
+.book:hover .cover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: rotatey(-80deg);
+  -ms-transform: rotatey(-80deg);
+  transform: rotatey(-60deg);
+}
