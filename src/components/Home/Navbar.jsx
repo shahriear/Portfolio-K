@@ -30,7 +30,7 @@ const Navbarr = () => {
             </Link>
           </NavItem>
           <NavItem>
-            <Link to="/home" className="hover:text-slate-400 transition-all">
+            <Link to="/" className="hover:text-slate-400 transition-all">
               home
             </Link>
           </NavItem>
