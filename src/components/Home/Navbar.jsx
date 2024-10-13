@@ -30,33 +30,53 @@ const Navbarr = () => {
             </Link>
           </NavItem>
           <NavItem>
-            <a href="/">home</a>
+            <Link to="/home" className="hover:text-slate-400 transition-all">
+              home
+            </Link>
           </NavItem>
         </DropDown>
         <DropDown style={{ width: '150px' }} label="About">
           <NavItem>
-            <a href="/service">Service 1</a>
+            <Link to="/service" className="hover:text-slate-400 transition-all">
+              service 1
+            </Link>
           </NavItem>
           <NavItem>
-            <a href="/about">about</a>
+            <Link to="/about" className="hover:text-slate-400 transition-all">
+              about
+            </Link>
           </NavItem>
         </DropDown>
         <DropDown style={{ width: '150px' }} label="Portfolio Layouts">
           <NavItem>
-            <a href="/portfolio">portfolio</a>
+            <Link
+              to="/portfolio"
+              className="hover:text-slate-400 transition-all"
+            >
+              portfolio
+            </Link>
           </NavItem>
           <NavItem>
-            <a href="/grid">grid</a>
+            <Link to="/grid" className="hover:text-slate-400 transition-all">
+              grid
+            </Link>
           </NavItem>
         </DropDown>
         <DropDown style={{ width: '150px' }} label="Portfolio Single">
           <NavItem>
-            <a href="/portfoliosingle">Service 1</a>
+            <Link
+              to="/portfoliosingle"
+              className="hover:text-slate-400 transition-all"
+            >
+              service 2
+            </Link>
           </NavItem>
         </DropDown>
         <DropDown style={{ width: '150px' }} label="Blog">
           <NavItem>
-            <a href="/blog">Service </a>
+            <Link to="/blog" className="hover:text-slate-400 transition-all">
+              blog service
+            </Link>
           </NavItem>
         </DropDown>
       </NavbarContent>
